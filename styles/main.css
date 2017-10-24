@@ -1,0 +1,83 @@
+#firstNavItem {
+  color: red;
+}
+
+body {
+  background-image: url("http://www.thespaatlittleriver.com/wp-content/uploads/2014/10/beach-05.jpg");
+  background-size: 1000px 800px;
+  background-repeat: no-repeat;
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+      body {
+          background-color: lightgreen;
+      }
+  }
+
+
+/*blog.html*/
+
+  #flex_main {
+  min-height: 800px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-flow: row;
+}
+
+#flex_main > .flex-article {
+  margin: 4px;
+  padding: 5px;
+  border: 1px solid #cccc33;
+  border-radius: 7pt;
+  background: #dddd88;
+  flex: 3 1 60%;
+  order: 2;
+}
+
+#flex_main > .flex-nav {
+  margin: 4px;
+  padding: 5px;
+  border: 1px solid #8888bb;
+  border-radius: 7pt;
+  background: #ccccff;
+  flex: 1 6 20%;
+  order: 1;
+}
+
+#flex_main > .flex-aside {
+  margin: 4px;
+  padding: 5px;
+  border: 1px solid #8888bb;
+  border-radius: 7pt;
+  background: #ccccff;
+  flex: 1 6 20%;
+  order: 3;
+}
+
+.flex-header, .flex-footer {
+  display: block;
+  margin: 4px;
+  padding: 5px;
+  min-height: 100px;
+  border: 1px solid #eebb55;
+  border-radius: 7pt;
+  background: #ffeebb;
+}
+
+@media all and (max-width: 640px) {
+  #flex_main, #flex_page {
+    flex-direction: column;
+  }
+
+  #flex_main > .flex-article, #flex_main > .flex-nav, #flex_main > .flex-aside {
+  /* Return them to document order */
+    order: 0;
+  }
+
+  #flex_main > .flexnav, #flex_main > .flexaside, .flexheader, .flexfooter {
+    min-height: 50px;
+    max-height: 50px;
+  }
+}
