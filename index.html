@@ -1,17 +1,70 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home Page</title>
+    <title>Our App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    Content Here
-    <h1 class="homePage">Welcome to My Site</h1>
-    <nav>
-      <a id="#firstNavItem" href="index.html">Home</a> |
-      <a href="pages/about.html">About</a> |
-      <a href="pages/products.html">Products</a> |
-      <a href="pages/contact_us.html">Contact Us</a>
-    </nav>
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <div id='loginContainer' class='navContainer'>
+    <a href="#">Sign Up</a> |
+    <a href="#">Login</a>
+  </div>
+</nav>
+
+
+<div class="card text-center">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">My First Blog Post</h4>
+        <p class="card-text">It is time to learn some fullstack programming. Are you ready?</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+      <div class="card-footer text-muted">
+        2 days ago
+      </div>
+    </div>
+
+		<!-- <header id="topPortion">
+			<h1>Our App</h1>
+      <nav class='navContainer'>
+        <a href="index.html">Home</a> |
+        <a href="pages/about.html">About</a> |
+        <a href="pages/products.html">Products</a> |
+        <a href="pages/contact_us.html">Contact Us</a>
+      </nav>
+      <div id='loginContainer' class='navContainer'>
+      	<a href="#">Sign Up</a> |
+        <a href="#">Login</a>
+      </div>
+    </header> -->
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
   </body>
 </html>
